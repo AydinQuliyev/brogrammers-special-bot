@@ -20,7 +20,9 @@ def greeting_message_handler(update: Update, context: CallbackContext):
     listMessages = file_service.get_message_from_file(cst.FN_GREETING_MESSAGE)
     index = r.randint(0, len(listMessages) - 1)
     telegram_util.send_message(update, listMessages[index])
-
+ 
+  def tag_all(update: Update, context: CallbackContext):
+  telegram_util.send_message(update,"@JustAydinn @Allahyarrr @Huseyn28 @hamidsultanzadeh @ram365 Rasall @NyzVortex @knncortexx")
 
 @spam_interceptor
 @logger_interceptor
