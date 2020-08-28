@@ -10,6 +10,7 @@ from tasks.scheduled_tasks import reset_all_spam_counts
 def add_handlers(dp:Dispatcher):
     dp.add_error_handler(hs.error_handler)
     dp.add_handler(CommandHandler("salambrat",hs.greeting_message_handler))
+     dp.add_handler(CommandHandler("yigisunyetiler",hs.tag_all))
     dp.add_handler(CommandHandler("eledoyulyeti",hs.confirm_bro_handler))
     dp.add_handler(CommandHandler("meneoyret",hs.improve_confirm_bro_handler))
     dp.add_handler(CommandHandler("musuqu",hs.music_handler))
